@@ -42,14 +42,15 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     gap: 10px;
 }
 
 main section {
     background-color: orange;
-    padding: 10rem;
-    
+    padding: 5rem 1rem; 
 }
+
 
 .mini-sections {
     grid-area: mini-seccions;
@@ -59,11 +60,15 @@ main section {
     gap: 1rem;
 }
 
-.mini-box {
+.box {
     background-color: blueviolet;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.box:nth-child(3) {
+    width: 30rem;
 }
 
 footer {
