@@ -15,6 +15,11 @@ body {
     grid-template-rows: auto auto auto 1fr auto;
     gap: 10px;
     height: 100vh;
+    border: 2px solid black; /* Borde general */
+}
+
+header, aside, .top-box, main section, .box, footer {
+    border: 1px solid black; /* Borde fino para cada elemento */
 }
 
 header {
@@ -51,7 +56,6 @@ main section {
     padding: 5rem 1rem; 
 }
 
-
 .mini-sections {
     grid-area: mini-seccions;
     display: grid;
@@ -65,10 +69,12 @@ main section {
     color: white;
     text-align: center;
     padding: 10px;
+    border: 1px solid black; /* Borde para las cajas */
 }
 
-.box:nth-child(3) {
-    width: 30rem;
+.box.middle {
+    grid-row: span 2; /* Los bloques del medio ocupan dos filas */
+    height: auto;
 }
 
 footer {
